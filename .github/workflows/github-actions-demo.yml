@@ -20,13 +20,13 @@ jobs:
           sudo apt-get install pdftk-java
           sudo dpkg -i pdftk_2.02-5_amd64.deb
           sudo pdftk --version
-          sudo pdftk *.pdf cat 1-endeast output output.pdf
+          sudo pdftk AmaliaJumah_SpaGMat_6.pdf cat 1-endeast output Rotated_AmaliaJumah_SpaGMat_6.pdf
           ls 
           pwd
 
       - uses: actions/upload-artifact@v4    
         with:
           name: my-artifact
-          path: output.pdf
+          path: Rotated_AmaliaJumah_SpaGMat_6
       
       - run: echo "🍏 This job's status is ${{ job.status }}."
