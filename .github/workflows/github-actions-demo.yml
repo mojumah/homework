@@ -27,6 +27,6 @@ jobs:
       - uses: actions/upload-artifact@v4    
         with:
           name: my-artifact
-          path: Rotated_AmaliaJumah_SpaGMat_6
+          path: Rotated_AmaliaJumah_SpaGMat_6.pdf
       
       - run: echo "🍏 This job's status is ${{ job.status }}."
