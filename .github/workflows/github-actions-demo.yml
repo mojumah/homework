@@ -19,6 +19,9 @@ jobs:
           sudo wget http://archive.ubuntu.com/ubuntu/pool/universe/p/pdftk/pdftk_2.02-5_amd64.deb
           sudo apt-get install pdftk-java
           sudo dpkg -i pdftk_2.02-5_amd64.deb
-          pdftk --version
+          sudo pdftk --version
+          sudo pdftk *.pdf cat 1-endeast output output.pdf
+          ls 
+
           
       - run: echo "🍏 This job's status is ${{ job.status }}."
