@@ -22,6 +22,9 @@ jobs:
           sudo pdftk --version
           sudo pdftk *.pdf cat 1-endeast output output.pdf
           ls 
+          git add output.pdf
+          git commit -m "adding rotated file"
+          git push origin main
 
           
       - run: echo "🍏 This job's status is ${{ job.status }}."
