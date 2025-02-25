@@ -22,11 +22,11 @@ jobs:
           sudo pdftk --version
           sudo pdftk *.pdf cat 1-endeast output output.pdf
           ls 
-          git config --global user.email "mohammad.jumah.uk@gmail.com"
-          git config --global user.name "mojumah"
-          git add output.pdf
-          git commit -m "adding rotated file"
-          git push origin main
+          pwd
 
-          
+      - uses: actions/upload-artifact@v4    
+        with:
+          name: my-artifact
+          path: output.pdf
+      
       - run: echo "🍏 This job's status is ${{ job.status }}."
