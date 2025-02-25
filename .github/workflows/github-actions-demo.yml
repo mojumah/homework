@@ -15,4 +15,10 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+          sudo apt update -y
+          sudo wget http://archive.ubuntu.com/ubuntu/pool/universe/p/pdftk/pdftk_2.02-5_amd64.deb
+          sudo apt-get install pdftk-java
+          sudo dpkg -i pdftk_2.02-5_amd64.deb
+          pdftk --version
+          
       - run: echo "🍏 This job's status is ${{ job.status }}."
