@@ -12,3 +12,4 @@ jobs:
           ref: numbers_to_50
       
       - run: ls ${{ github.workspace }}
+      - run: bash count.sh
