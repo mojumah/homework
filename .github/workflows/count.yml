@@ -1,11 +1,10 @@
 name: Count to 50
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: workflow_dispatch
+on: [workflow_dispatch]
 jobs:
   count-to-50:
     runs-on: ubuntu-latest
     steps:
-        run: |
-          pwd
-          ls
-          bash count.sh
+      - run: ls
+      - run: pwd
+      - run: bash count.sh
