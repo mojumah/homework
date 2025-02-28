@@ -5,4 +5,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: bash count.sh
+      - run: |
+          pwd
+          ls
+          bash count.sh
