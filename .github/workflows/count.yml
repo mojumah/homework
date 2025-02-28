@@ -8,3 +8,7 @@ jobs:
       - run: ls
       - run: pwd
       - run: bash count.sh
+
+      - uses: actions/checkout@v4
+        with:
+        ref: numbers_to_50
