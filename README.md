@@ -1,9 +1,5 @@
-``How to use this workflow``
+``How to use the capital_letters.sh script``
 
-1- scan the landscape pdf document.
+1- in the capital_letters.sh script, write a sentence in lower case that includes the days of the week.
 
-2- copy the pdf document to the repo's folder.
-
-3- add, commit, and then push to GitHub the document that needs rotating.
-
-4- Download the rotated document from the Workflow's output.
+2- the script capital_letters.sh will correct your spelling.
