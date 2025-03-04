@@ -1,4 +1,4 @@
-sentence="the days of the week are monday tuesday wednesday thursday friday saturday sunday"
+sentence="the days of the week are monday tuesday wednesday thursday friday saturday sunday my name is mr brown"
 for word in $sentence
 do 
 echo $word
@@ -29,6 +29,10 @@ echo $word
     elif test $word = "sunday"
     then
     echo "This is a week day write the first letter in capital as shown below:"
+    echo ${word^}
+    elif test $word = "mr"
+    then
+    echo "This must be capital"
     echo ${word^}
     else
     echo "Don't write the first letter in capital"
