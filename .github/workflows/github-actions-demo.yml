@@ -20,7 +20,7 @@ jobs:
           sudo apt-get install pdftk-java
           sudo dpkg -i pdftk_2.02-5_amd64.deb
           sudo pdftk --version
-          sudo pdftk One-more-or-one-less.pdf cat 1-endeast output Rotated_AmaliaJumah_SpaGMat_6.pdf
+          sudo pdftk One-more-or-one-less.pdf cat 1-endeast output Rotated_AmaliaJumah_One-more-or-one-less.pdf
           ls 
           pwd
 
