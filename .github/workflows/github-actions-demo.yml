@@ -20,13 +20,13 @@ jobs:
           sudo apt-get install pdftk-java
           sudo dpkg -i pdftk_2.02-5_amd64.deb
           sudo pdftk --version
-          sudo pdftk One-more-or-one-less.pdf cat 1-endeast output Rotated_AmaliaJumah_One-more-or-one-less.pdf
+          sudo pdftk Spag_mat__4_week_4 cat 1-endeast output Rotated_AmaliaJumah_Spag_mat__4_week_4.pdf
           ls 
           pwd
 
       - uses: actions/upload-artifact@v4    
         with:
           name: my-artifact
-          path: Rotated_AmaliaJumah_One-more-or-one-less.pdf
+          path: Rotated_AmaliaJumah_Spag_mat__4_week_4.pdf
       
       - run: echo "🍏 This job's status is ${{ job.status }}."
